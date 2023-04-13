@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view1">
+
+    <item android:id="@+id/kurumsal" android:title="KURUMSAL"><menu>
+            <item android:id="@+id/hakkimizda" android:title="HAKKIMIZDA"> </item>
+            <item android:id="@+id/ekbimiz" android:title="EKİBİMİZ"> </item>
+            <item android:id="@+id/misyon" android:title="MİSYONUMUZ"> </item>
+            <item android:id="@+id/vizon" android:title="VİZYONUMUZ"> </item>
+            <item android:id="@+id/referans" android:title="REFERANSLARIMIZ"> </item> </menu>
+    </item>
+
+    <item android:id="@+id/hizmetler" android:title="HİZMETLER"> </item>
+
+    <item android:id="@+id/erpurunler" android:title="ERP ÜRÜNLER"> <menu>
+        <item android:id="@+id/ticaripaket" android:title="TİCARİ PAKET"> </item>
+        <item android:id="@+id/parekende" android:title="PAREKENDE\MAĞAZA"> </item>
+        <item android:id="@+id/melanis" android:title="KG MELANİS"> </item>
+        <item android:id="@+id/palaimon" android:title="KG PALAİMON"> </item>
+        <item android:id="@+id/loji" android:title="KG LOGİ"> </item> </menu>
+    </item>
+
+    <item android:id="@+id/ticaret" android:title="TİCARET"><menu>
+        <item android:id="@+id/eticsistem" android:title="E-TİCARET SİSTEMİ"> </item>
+        <item android:id="@+id/eticdanismanlik" android:title="E-TİCARET DANIŞMANLIĞI"> </item>
+        <item android:id="@+id/sosyalmedyareklam" android:title="SOSYAL MEDYA REKLAMLARI"> </item>
+        <item android:id="@+id/googlereklam" android:title="GOOGLE REKLAMLARI"> </item> </menu>
+    </item>
+
+    <item android:id="@+id/yazilim" android:title="YAZILIM"> <menu>
+        <item android:id="@+id/webmasaustu" android:title="WEB VE MASAÜSTÜ UYGULAMA GELİŞTİRME"> </item>
+        <item android:id="@+id/mobil" android:title="MOBİL UYGULAMA GELİŞTİRME"> </item>
+    </menu> </item>
+    <item android:id="@+id/entegreyeri" android:title="ENTEGREYERİ"> <menu>
+        <item android:id="@+id/korgun" android:title="KORGU ENTEGRASYONU"> </item>
+        <item android:id="@+id/muhasebe" android:title="MUHASEBEENTEGRASYONU"> </item>
+        <item android:id="@+id/edonusum" android:title="E-DÖNÜŞÜM ENTEGRASYONU"> </item>
+        <item android:id="@+id/kargo" android:title="KARGO ENTEGRASYONU"> </item>
+        <item android:id="@+id/trendyol" android:title="TRENDYOL ENTEGRASYONU"> </item>
+        <item android:id="@+id/hepsiburada" android:title="HEPSİBURADA ENTEGRASYONU"> </item></menu>
+    </item>
+
+    <item android:id="@+id/blog" android:title="BLOG"> </item>
+
+    <item android:id="@+id/iletisim" android:title="İLETİŞİM"> </item>
+</menu>

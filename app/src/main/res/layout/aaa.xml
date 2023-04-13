@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layout1"
+    tools:context=".aaa">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="407dp"
+        android:layout_height="481dp"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintBottom_toTopOf="@+id/aaltconstraint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/üstconstraint">
+
+        <LinearLayout
+            android:id="@+id/linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintlayout"
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:background="@color/white">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="15dp"
+                    android:backgroundTint="#FFFFFF"
+                    app:cardElevation="10dp"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageButton
+                            android:id="@+id/kulaklik"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="45dp"
+                            android:src="@drawable/kulakik"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.0" />
+
+                        <ImageButton
+                            android:id="@+id/alisverissepeti"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="85dp"
+                            android:layout_marginEnd="85dp"
+                            android:src="@drawable/alisverisepeti"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@+id/muhasebe"
+                            app:layout_constraintStart_toEndOf="@+id/kulaklik"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageButton
+                            android:id="@+id/muhasebe"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginEnd="45dp"
+                            android:src="@drawable/muhasebe"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <ImageView
+                    android:id="@+id/sema"
+                    android:layout_width="408dp"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    app:layout_constraintBottom_toTopOf="@+id/blogdaenson"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cardView"
+                    app:layout_constraintVertical_bias="0.608"
+                    app:srcCompat="@drawable/aaaaaaa" />
+
+                <TextView
+                    android:id="@+id/blogdaenson"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:text="Blog'dan En Son"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="24dp"
+                    app:layout_constraintBottom_toTopOf="@+id/blogcizgi"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/blogcizgi"
+                    android:layout_width="match_parent"
+                    android:layout_height="1.5dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/black"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <ImageView
+                android:id="@+id/uygulamagelistirmeimage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                app:srcCompat="@drawable/uygulamagelistirme" />
+
+            <TextView
+                android:id="@+id/textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="09 Temmuz 2021"
+                android:textAlignment="textEnd"
+                android:textColor="@color/nav"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/eticaretimage"
+                android:layout_width="match_parent"
+                android:layout_height="225dp"
+                android:clickable="true"
+                app:srcCompat="@drawable/eticaretdanismanligi" />
+
+            <TextView
+                android:id="@+id/textview1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="09 Temmuz 2021"
+                android:textAlignment="textEnd"
+                android:textColor="@color/nav"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/korgunimage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                app:srcCompat="@drawable/korgun" />
+
+            <TextView
+                android:id="@+id/textview2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="09 Temmuz 2021"
+                android:textAlignment="textEnd"
+                android:textColor="@color/nav"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/erpimage"
+                android:layout_width="match_parent"
+                android:layout_height="225dp"
+                android:clickable="true"
+                app:srcCompat="@drawable/erp" />
+
+            <TextView
+                android:id="@+id/textview3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="09 Temmuz 2021"
+                android:textAlignment="textEnd"
+                android:textColor="@color/nav"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/bosimage"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:clickable="true"
+                app:srcCompat="@drawable/bos" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/aaltconstraint"
+
+        android:layout_width="0dp"
+        android:layout_height="300dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="-90dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/adasda"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/deneme2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:backgroundTint="@color/red"
+                app:cardCornerRadius="100dp"
+                app:cardElevation="100dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.49">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/bizitakipedin"
+                        android:layout_width="0dp"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="10dp"
+                        android:text="Bizi Takip Edin "
+                        android:textColor="@color/nav"
+                        android:textSize="27sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/imagebutoninsta"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/imagebutoninsta" />
+
+                    <ImageButton
+                        android:id="@+id/imagebutontelefon"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="45dp"
+                        android:background="@drawable/butonsekli"
+                        android:contentDescription="@string/app_name"
+                        app:layout_constraintStart_toEndOf="@+id/cizgi"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/iphone" />
+
+                    <TextView
+                        android:id="@+id/cizgi1"
+                        android:layout_width="0dp"
+                        android:layout_height="1.5dp"
+                        android:background="@color/nav"
+                        android:text=""
+                        app:layout_constraintBottom_toBottomOf="@+id/imagebutontelefon"
+                        app:layout_constraintEnd_toStartOf="@+id/imagebutonmail"
+                        app:layout_constraintStart_toEndOf="@+id/imagebutontelefon"
+                        app:layout_constraintTop_toTopOf="@+id/imagebutontelefon" />
+
+                    <TextView
+                        android:id="@+id/cizgi3"
+                        android:layout_width="65dp"
+                        android:layout_height="1.5dp"
+                        android:background="@color/nav"
+                        android:text=""
+                        app:layout_constraintBottom_toBottomOf="@+id/imagebutonharita"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/imagebutonharita" />
+
+                    <TextView
+                        android:id="@+id/cizgi"
+                        android:layout_width="65dp"
+                        android:layout_height="1.5dp"
+                        android:background="@color/nav"
+                        android:text=""
+                        app:layout_constraintBottom_toBottomOf="@+id/imagebutontelefon"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/imagebutontelefon" />
+
+                    <ImageButton
+                        android:id="@+id/imagebutonmail"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/butonsekli"
+                        android:contentDescription="@string/app_name"
+                        app:layout_constraintBottom_toBottomOf="@+id/imagebutontelefon"
+                        app:layout_constraintEnd_toEndOf="@+id/cizgi3"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/imagebutontelefon"
+                        app:srcCompat="@drawable/mail" />
+
+                    <TextView
+                        android:id="@+id/cizgi2"
+                        android:layout_width="0dp"
+                        android:layout_height="1.5dp"
+                        android:background="@color/nav"
+                        android:text=""
+                        app:layout_constraintBottom_toBottomOf="@+id/imagebutonmail"
+                        app:layout_constraintEnd_toStartOf="@+id/imagebutonharita"
+                        app:layout_constraintStart_toEndOf="@+id/imagebutonmail"
+                        app:layout_constraintTop_toTopOf="@+id/imagebutonmail" />
+
+                    <ImageButton
+                        android:id="@+id/imagebutonharita"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/butonsekli"
+                        android:contentDescription="@string/app_name"
+                        app:layout_constraintBottom_toBottomOf="@+id/imagebutonmail"
+                        app:layout_constraintEnd_toStartOf="@+id/cizgi3"
+                        app:layout_constraintTop_toTopOf="@+id/imagebutonmail"
+                        app:layout_constraintVertical_bias="0.0"
+                        app:srcCompat="@drawable/location" />
+
+                    <ImageButton
+                        android:id="@+id/imagebutoninsta"
+                        android:layout_width="50dp"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/butonsekli"
+                        android:contentDescription="@string/app_name"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/bizitakipedin"
+                        app:layout_constraintTop_toBottomOf="@+id/imagebutonharita"
+                        app:srcCompat="@drawable/instagram" />
+
+                    <ImageButton
+                        android:id="@+id/imagebutonface"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="10dp"
+                        android:background="@drawable/butonsekli"
+                        android:contentDescription="@string/app_name"
+                        app:layout_constraintBottom_toBottomOf="@+id/imagebutoninsta"
+                        app:layout_constraintStart_toEndOf="@+id/imagebutoninsta"
+                        app:layout_constraintTop_toTopOf="@+id/imagebutoninsta"
+                        app:srcCompat="@drawable/facebookyeni" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/üstconstraint"
+        android:layout_width="0dp"
+        android:layout_height="325dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="-100dp"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="@color/red"
+            app:cardCornerRadius="100dp"
+            app:cardElevation="17dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:layout_editor_absoluteX="8dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.ouattararomuald.slider.ImageSlider
+                    android:id="@+id/image_slider"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="150dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </com.ouattararomuald.slider.ImageSlider>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/egebarkodlogo"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+        <SearchView
+            android:id="@+id/searchview"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+           />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_view1"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:itemRippleColor="#673AB7"
+        app:itemTextColor="@color/nav"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/menu" />
+    </androidx.drawerlayout.widget.DrawerLayout>
